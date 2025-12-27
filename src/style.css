@@ -1,0 +1,138 @@
+:root {
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #00ff00;
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #000;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px #00ff00;
+}
+
+.simulation p {
+  font-size: 1.2em;
+  margin: 1rem 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid #00ff00;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000;
+  color: #00ff00;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button:hover {
+  background-color: #00ff00;
+  color: #000;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#chatInterface {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+#chatMessages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #00ff00;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #111;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.message.user {
+  background: #004400;
+  text-align: right;
+}
+
+.message.ai {
+  background: #002200;
+}
+
+.chatInput {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#userInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #00ff00;
+  background: #000;
+  color: #00ff00;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.apiKeyInput {
+  margin-bottom: 1rem;
+}
+
+.apiKeyInput label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.apiKeyInput input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #00ff00;
+  background: #000;
+  color: #00ff00;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.apiKeyInput input::placeholder {
+  color: #008800;
+}
